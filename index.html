@@ -21,9 +21,11 @@
 </head>
 
 <body>
+
   <!-- 1st section -->
-  <div class="container-fluid" style="height:100vh">
-    <nav class="bg-primaryX text-lightX navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top">
+
+    <!-- 1st navbar -->
+    <nav class="bg-primaryX text-lightX navbar navbar-dark bg-dark navbar-expand-lg navbar-togglable fixed-top">
 
       <div class="container"> <!-- container -->
 
@@ -58,12 +60,33 @@
       </div> <!-- end of container -->
     </nav>
 
+    <!-- 2nd nav bar -->
+    <nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top fixed-top-2">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" style="width: 300px;" type="search" placeholder="Enter a Location" >
+      </form>
+
+      <form class="form-inline mx-2 ml-auto">
+        <input id="startDate" width="276" placeholder="Start date"/> 
+      </form>
+
+      <form class="form-inline mx-2">
+        <input id="endDate" width="276" placeholder="End Date"/> 
+      </form>
+
+      <form class="form-inline mx-2">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <!-- end of 2nd nav -->
+
+    <div class="container-fluid" style="height:100vh"> <!--div begins-->
     <section class="section section-top section-full">
 
       <!-- cover image -->
-      <div class="bg-cover" style="background-image: url(https://images.unsplash.com/photo-1674577201142-e26740201f57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1487&q=80);position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-repeat: no-repeat;background-position: 50%;background-size: cover; 
+      <div class="bg-cover" style="background-image: url(https://images.unsplash.com/photo-1674577201142-e26740201f57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1487&q=80); 
       position: absolute;
-      top: 0;
+      top: 56px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -101,9 +124,7 @@
               <div class="form-group">
                 <input type="email" class="form-control" id="locationInput" aria-describedby="locationInputHelp" placeholder="Enter a Location">
                 <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
-              </div>
-              Start Date: <input id="startDate" width="276" />  <!--gijigo.com date picker-->
-              End Date: <input id="endDate" width="276" />                 
+              </div>         
             </form>
             <a href="#" class="btn btn-danger btn-block">Search</a>
           </div>
