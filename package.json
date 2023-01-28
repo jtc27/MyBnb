@@ -1,0 +1,29 @@
+{
+  "name": "mybnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtc27/MyBnb.git"
+  },
+  "author": "Jacob Cho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtc27/MyBnb/issues"
+  },
+  "homepage": "https://github.com/jtc27/MyBnb#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
