@@ -51,7 +51,7 @@
                 <a class="nav-link" href="#">Sign up</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#" role="button" id="loginButton">Login</a>
               </li>                                                    
             </ul>
 
@@ -79,6 +79,45 @@
       </form>
     </nav>
     <!-- end of 2nd nav -->
+
+    <!--Login modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header"> <!--modal header-->
+                  <h4 class="modal-title">Login to Mybnb</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body"> <!--modal body-->
+                  <div class="container-fluid">
+                      <form>
+                          <div class="form-row">
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginEmail">Email address</label>
+                                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                              </div>
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginPassword">Password</label>
+                                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                              </div>
+                              <div class="col">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label"> Remember me</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <button type="submit" class="btn btn-danger btn-block">Sign in</button>
+                              <button type="button" class="btn btn-secondary btn-sm ml-auto btn-block" data-dismiss="modal">Cancel</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div> <!--end of Login modal-->
+
 
     <div class="container-fluid" style="height:100vh"> <!--div begins-->
     <section class="section section-top section-full">
@@ -144,6 +183,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/datepicker.js"></script>
+  <script src="js/jquery.js"></script>
 
 </body>
 </html>
