@@ -11,3 +11,12 @@
 .fixed-top-2 {
   margin-top: 56px;
 } 
+
+.card-deck {
+  margin-top: 15%
+}
+
+.card {
+  max-width: 270px;
+  max-height: 300px;
+}
